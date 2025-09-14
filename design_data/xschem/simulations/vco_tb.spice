@@ -1,5 +1,37 @@
-** sch_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/Combined_Design/design_data/xschem/vco_wob.sch
-**.subckt vco_wob VPWR VGND vctl Vout
+** sch_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/xschem/vco_tb.sch
+**.subckt vco_tb Vout
+*.opin Vout
+VPWR net1 GND 1.2
+vctl net2 GND 1
+x1 net1 GND net2 Vout vco
+**** begin user architecture code
+ .lib cornerMOSlv.lib mos_tt
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ_stat
+
+
+
+.param temp=27
+.control
+save all
+.options maxstep=10n reltol=1e-3 abstol=1e-6
+save v(vout)
+tran 100p 1u
+write vco.raw
+plot v(Vout) xlimit 500n 1u
+fft v(Vout)
+let vmag = db(mag(v(Vout)))
+plot vmag xlabel 'Frequency (Hz)' xlimit 1Meg 100Meg
+wrdata fft_output(Vcon=1).txt vmag
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  vco.sym # of pins=4
+** sym_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/xschem/vco.sym
+** sch_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/xschem/vco.sch
+.subckt vco VPWR VGND vctl Vout
 *.iopin VPWR
 *.iopin VGND
 *.ipin vctl
@@ -50,11 +82,12 @@ x8 net24 VPWR net18 net25 VGND net21 vco_inverter
 x9 net23 VPWR net25 net27 VGND net22 vco_inverter
 x10 net31 VPWR net27 net32 VGND net28 vco_inverter
 x11 net30 VPWR net32 Vout VGND net29 vco_inverter
-**.ends
+.ends
+
 
 * expanding   symbol:  vco_inverter.sym # of pins=6
-** sym_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/Combined_Design/design_data/xschem/vco_inverter.sym
-** sch_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/Combined_Design/design_data/xschem/vco_inverter.sch
+** sym_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/xschem/vco_inverter.sym
+** sch_path: /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/xschem/vco_inverter.sch
 .subckt vco_inverter VPWR VPB A Y VNB VGND
 *.iopin VPWR
 *.iopin VGND
@@ -66,4 +99,5 @@ XM2 Y A VPWR VPB sg13_lv_pmos w=2u l=0.13u ng=1 m=1
 XM1 Y A VGND VNB sg13_lv_nmos w=1u l=0.13u ng=1 m=1
 .ends
 
+.GLOBAL GND
 .end
