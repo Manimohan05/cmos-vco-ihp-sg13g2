@@ -16,31 +16,31 @@ Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 6.0
 Library name: LIB
 Reading "$$$CONTEXT_INFO$$$".
-Reading "nmos$4".
 Reading "pmos$4".
-Reading "nmos_bulk".
-Reading "pmos_bulk".
+Reading "nmos$4".
 Reading "T2_Inverter".
 CIF file read warning: CIF style sg13g2(): units rescaled by factor of 10 / 1
 CIF file read warning: Input off lambda grid by 1/10; snapped to grid.
-Reading "nmos$6".
-Reading "nmos$5".
-Reading "pmos$3".
-Reading "cmim".
-Reading "nmos".
-Reading "t2_pmos".
-Reading "t2_nmos".
-Reading "VCO_1".
+Reading "pmos_bulk".
+Reading "nmos_bulk".
 Reading "pmos".
+Reading "VCO_1".
+Reading "t2_nmos".
+Reading "t2_pmos".
+Reading "nmos".
+Reading "cmim".
+Reading "pmos$3".
+Reading "nmos$5".
+Reading "nmos$6".
 Reading "vco".
 Extracting vco into /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/pex/vco__vco/magic_RC/vco.ext:
-Port: name = Vout is new node 0x5d6cafd508b0
+Port: name = Vout is new node 0x5e1b076ae8a0
 Location is (7645, 92); drivepoint (7645, 92)
-Port: name = vctl is new node 0x5d6caff7c5a0
+Port: name = vctl is new node 0x5e1b078da590
 Location is (8932, -1060); drivepoint (8932, -1060)
-Port: name = VPWR is new node 0x5d6caffc0e60
+Port: name = VPWR is new node 0x5e1b0791ee50
 Location is (7662, 1118); drivepoint (7662, 1118)
-Port: name = VGND is new node 0x5d6cafd543c0
+Port: name = VGND is new node 0x5e1b07e0c3d0
 Location is (8928, -1846); drivepoint (8928, -1846)
 Warning: ndiffc at 8639 -1350 smaller than extract section allows
 Total Nets: 4

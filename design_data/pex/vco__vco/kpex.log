@@ -1,60 +1,60 @@
-[2025-09-14 07:26:44,923] [INFO]    GDS input file passed, running in LVS mode
-[2025-09-14 07:26:44,942] [INFO]    No explicit top cell specified, using top cell 'vco'
-[2025-09-14 07:26:44,981] [INFO]    Calling MAGIC
-[2025-09-14 07:26:44,983] [SUBPROCESS]    magic -dnull -noconsole -rcfile /foss/pdks/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc pex/vco__vco/magic_RC/vco_MAGIC_RC_Script.tcl, output file: pex/vco__vco/magic_RC/vco_MAGIC_RC_Output.txt
-[2025-09-14 07:26:45,038] [SUBPROCESS]    
-[2025-09-14 07:26:45,040] [SUBPROCESS]    Magic 8.3 revision 530 - Compiled on Tue Jul 29 09:46:08 AM CEST 2025.
-[2025-09-14 07:26:45,041] [SUBPROCESS]    Starting magic under Tcl interpreter
-[2025-09-14 07:26:45,042] [SUBPROCESS]    Using the terminal as the console.
-[2025-09-14 07:26:45,044] [SUBPROCESS]    WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
-[2025-09-14 07:26:45,045] [SUBPROCESS]    Using NULL graphics device.
-[2025-09-14 07:26:45,104] [SUBPROCESS]    Processing system .magicrc file
-[2025-09-14 07:26:45,121] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
-[2025-09-14 07:26:45,123] [SUBPROCESS]    2 Magic internal units = 1 Lambda
-[2025-09-14 07:26:45,148] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
-[2025-09-14 07:26:45,268] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
-[2025-09-14 07:26:45,270] [SUBPROCESS]        fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
-[2025-09-14 07:26:45,274] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
-[2025-09-14 07:26:45,276] [SUBPROCESS]    Loading "pex/vco__vco/magic_RC/vco_MAGIC_RC_Script.tcl" from command line.
-[2025-09-14 07:26:45,280] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
-[2025-09-14 07:26:45,282] [SUBPROCESS]    Library written using GDS-II Release 6.0
-[2025-09-14 07:26:45,283] [SUBPROCESS]    Library name: LIB
-[2025-09-14 07:26:45,287] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
-[2025-09-14 07:26:45,288] [SUBPROCESS]    Reading "nmos$4".
-[2025-09-14 07:26:45,290] [SUBPROCESS]    Reading "pmos$4".
-[2025-09-14 07:26:45,291] [SUBPROCESS]    Reading "nmos_bulk".
-[2025-09-14 07:26:45,291] [SUBPROCESS]    Reading "pmos_bulk".
-[2025-09-14 07:26:45,292] [SUBPROCESS]    Reading "T2_Inverter".
-[2025-09-14 07:26:45,293] [SUBPROCESS]    CIF file read warning: CIF style sg13g2(): units rescaled by factor of 10 / 1
-[2025-09-14 07:26:45,295] [SUBPROCESS]    CIF file read warning: Input off lambda grid by 1/10; snapped to grid.
-[2025-09-14 07:26:45,296] [SUBPROCESS]    Reading "nmos$6".
-[2025-09-14 07:26:45,297] [SUBPROCESS]    Reading "nmos$5".
-[2025-09-14 07:26:45,298] [SUBPROCESS]    Reading "pmos$3".
-[2025-09-14 07:26:45,299] [SUBPROCESS]    Reading "cmim".
-[2025-09-14 07:26:45,300] [SUBPROCESS]    Reading "nmos".
-[2025-09-14 07:26:45,300] [SUBPROCESS]    Reading "t2_pmos".
-[2025-09-14 07:26:45,301] [SUBPROCESS]    Reading "t2_nmos".
-[2025-09-14 07:26:45,302] [SUBPROCESS]    Reading "VCO_1".
-[2025-09-14 07:26:45,304] [SUBPROCESS]    Reading "pmos".
-[2025-09-14 07:26:45,305] [SUBPROCESS]    Reading "vco".
-[2025-09-14 07:26:45,344] [SUBPROCESS]    Extracting vco into /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/pex/vco__vco/magic_RC/vco.ext:
-[2025-09-14 07:26:45,469] [SUBPROCESS]    Port: name = Vout is new node 0x5d6cafd508b0
-[2025-09-14 07:26:45,470] [SUBPROCESS]    Location is (7645, 92); drivepoint (7645, 92)
-[2025-09-14 07:26:45,471] [SUBPROCESS]    Port: name = vctl is new node 0x5d6caff7c5a0
-[2025-09-14 07:26:45,473] [SUBPROCESS]    Location is (8932, -1060); drivepoint (8932, -1060)
-[2025-09-14 07:26:45,474] [SUBPROCESS]    Port: name = VPWR is new node 0x5d6caffc0e60
-[2025-09-14 07:26:45,475] [SUBPROCESS]    Location is (7662, 1118); drivepoint (7662, 1118)
-[2025-09-14 07:26:45,476] [SUBPROCESS]    Port: name = VGND is new node 0x5d6cafd543c0
-[2025-09-14 07:26:45,477] [SUBPROCESS]    Location is (8928, -1846); drivepoint (8928, -1846)
-[2025-09-14 07:26:45,495] [SUBPROCESS]    Warning: ndiffc at 8639 -1350 smaller than extract section allows
-[2025-09-14 07:26:45,528] [SUBPROCESS]    Total Nets: 4
-[2025-09-14 07:26:45,530] [SUBPROCESS]    Nets extracted: 4 (1.000000)
-[2025-09-14 07:26:45,531] [SUBPROCESS]    Nets output: 4 (1.000000)
-[2025-09-14 07:26:45,548] [SUBPROCESS]    exttospice finished.
-[2025-09-14 07:26:45,560] [INFO]    MAGIC succeeded after 0.5746s
-[2025-09-14 07:26:45,637] [SUBPROCESS]    Report DB saved at: pex/vco__vco/magic_RC/vco_MAGIC_report.rdb.gz
-[2025-09-14 07:26:45,638] [SUBPROCESS]    SPICE netlist saved at: pex/vco__vco/magic_RC/vco.pex.spice
-[2025-09-14 07:26:45,643] [SUBPROCESS]    * NGSPICE file created from vco.ext - technology: ihp-sg13g2
+[2025-09-14 22:16:17,125] [INFO]    GDS input file passed, running in LVS mode
+[2025-09-14 22:16:17,135] [INFO]    No explicit top cell specified, using top cell 'vco'
+[2025-09-14 22:16:17,180] [INFO]    Calling MAGIC
+[2025-09-14 22:16:17,182] [SUBPROCESS]    magic -dnull -noconsole -rcfile /foss/pdks/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc pex/vco__vco/magic_RC/vco_MAGIC_RC_Script.tcl, output file: pex/vco__vco/magic_RC/vco_MAGIC_RC_Output.txt
+[2025-09-14 22:16:17,201] [SUBPROCESS]    
+[2025-09-14 22:16:17,202] [SUBPROCESS]    Magic 8.3 revision 530 - Compiled on Tue Jul 29 09:46:08 AM CEST 2025.
+[2025-09-14 22:16:17,203] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2025-09-14 22:16:17,205] [SUBPROCESS]    Using the terminal as the console.
+[2025-09-14 22:16:17,207] [SUBPROCESS]    WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+[2025-09-14 22:16:17,208] [SUBPROCESS]    Using NULL graphics device.
+[2025-09-14 22:16:17,243] [SUBPROCESS]    Processing system .magicrc file
+[2025-09-14 22:16:17,254] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2025-09-14 22:16:17,256] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2025-09-14 22:16:17,278] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2025-09-14 22:16:17,394] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2025-09-14 22:16:17,396] [SUBPROCESS]        fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+[2025-09-14 22:16:17,399] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2025-09-14 22:16:17,401] [SUBPROCESS]    Loading "pex/vco__vco/magic_RC/vco_MAGIC_RC_Script.tcl" from command line.
+[2025-09-14 22:16:17,406] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2025-09-14 22:16:17,407] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2025-09-14 22:16:17,408] [SUBPROCESS]    Library name: LIB
+[2025-09-14 22:16:17,409] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2025-09-14 22:16:17,410] [SUBPROCESS]    Reading "pmos$4".
+[2025-09-14 22:16:17,411] [SUBPROCESS]    Reading "nmos$4".
+[2025-09-14 22:16:17,413] [SUBPROCESS]    Reading "T2_Inverter".
+[2025-09-14 22:16:17,414] [SUBPROCESS]    CIF file read warning: CIF style sg13g2(): units rescaled by factor of 10 / 1
+[2025-09-14 22:16:17,416] [SUBPROCESS]    CIF file read warning: Input off lambda grid by 1/10; snapped to grid.
+[2025-09-14 22:16:17,418] [SUBPROCESS]    Reading "pmos_bulk".
+[2025-09-14 22:16:17,420] [SUBPROCESS]    Reading "nmos_bulk".
+[2025-09-14 22:16:17,422] [SUBPROCESS]    Reading "pmos".
+[2025-09-14 22:16:17,423] [SUBPROCESS]    Reading "VCO_1".
+[2025-09-14 22:16:17,424] [SUBPROCESS]    Reading "t2_nmos".
+[2025-09-14 22:16:17,425] [SUBPROCESS]    Reading "t2_pmos".
+[2025-09-14 22:16:17,426] [SUBPROCESS]    Reading "nmos".
+[2025-09-14 22:16:17,427] [SUBPROCESS]    Reading "cmim".
+[2025-09-14 22:16:17,428] [SUBPROCESS]    Reading "pmos$3".
+[2025-09-14 22:16:17,429] [SUBPROCESS]    Reading "nmos$5".
+[2025-09-14 22:16:17,430] [SUBPROCESS]    Reading "nmos$6".
+[2025-09-14 22:16:17,432] [SUBPROCESS]    Reading "vco".
+[2025-09-14 22:16:17,460] [SUBPROCESS]    Extracting vco into /foss/designs/iic-osic-tools/cmos-vco-ihp-sg13g2/design_data/pex/vco__vco/magic_RC/vco.ext:
+[2025-09-14 22:16:17,560] [SUBPROCESS]    Port: name = Vout is new node 0x5e1b076ae8a0
+[2025-09-14 22:16:17,561] [SUBPROCESS]    Location is (7645, 92); drivepoint (7645, 92)
+[2025-09-14 22:16:17,562] [SUBPROCESS]    Port: name = vctl is new node 0x5e1b078da590
+[2025-09-14 22:16:17,563] [SUBPROCESS]    Location is (8932, -1060); drivepoint (8932, -1060)
+[2025-09-14 22:16:17,564] [SUBPROCESS]    Port: name = VPWR is new node 0x5e1b0791ee50
+[2025-09-14 22:16:17,566] [SUBPROCESS]    Location is (7662, 1118); drivepoint (7662, 1118)
+[2025-09-14 22:16:17,567] [SUBPROCESS]    Port: name = VGND is new node 0x5e1b07e0c3d0
+[2025-09-14 22:16:17,568] [SUBPROCESS]    Location is (8928, -1846); drivepoint (8928, -1846)
+[2025-09-14 22:16:17,584] [SUBPROCESS]    Warning: ndiffc at 8639 -1350 smaller than extract section allows
+[2025-09-14 22:16:17,611] [SUBPROCESS]    Total Nets: 4
+[2025-09-14 22:16:17,612] [SUBPROCESS]    Nets extracted: 4 (1.000000)
+[2025-09-14 22:16:17,614] [SUBPROCESS]    Nets output: 4 (1.000000)
+[2025-09-14 22:16:17,630] [SUBPROCESS]    exttospice finished.
+[2025-09-14 22:16:17,640] [INFO]    MAGIC succeeded after 0.4561s
+[2025-09-14 22:16:17,704] [SUBPROCESS]    Report DB saved at: pex/vco__vco/magic_RC/vco_MAGIC_report.rdb.gz
+[2025-09-14 22:16:17,705] [SUBPROCESS]    SPICE netlist saved at: pex/vco__vco/magic_RC/vco.pex.spice
+[2025-09-14 22:16:17,709] [SUBPROCESS]    * NGSPICE file created from vco.ext - technology: ihp-sg13g2
 
 .subckt vco Vout vctl VPWR VGND
 X0 a_542_269# a_745_n2395# a_684_n1958# VGND sg13_lv_nmos ad=0.11p pd=0.94u as=0.17p ps=1.68u w=0.5u l=0.13u
@@ -206,142 +206,142 @@ X145 a_745_n2395# a_2087_n2395# a_2026_n1958# VGND sg13_lv_nmos ad=0.11p pd=0.94
 X146 a_3567_n217# a_2092_351# a_3434_351# VGND sg13_lv_nmos ad=0.17p pd=1.68u as=0.11p ps=0.94u w=0.5u l=0.13u
 X147 VGND vctl a_3567_n217# VGND sg13_lv_nmos ad=0.102p pd=1.28u as=65.99999f ps=0.74u w=0.3u l=0.13u
 X148 a_3429_n2395# a_4771_n2395# a_4709_n2525# VPWR sg13_lv_pmos ad=0.11p pd=0.94u as=0.17p ps=1.68u w=0.5u l=0.13u
-C0 VPWR a_542_269# 0.7984f
-C1 a_6051_n2525# a_620_930# 0.19288f
-C2 a_2092_351# a_3340_351# 0.10275f
-C3 a_750_351# a_656_351# 0.42803f
-C4 VPWR a_2025_n2525# 1.36925f
-C5 a_3368_n1958# a_3429_n2395# 0.03778f
-C6 a_6052_n1958# vctl 0.04998f
-C7 a_3367_n2525# a_620_930# 0.19098f
-C8 a_684_n1958# vctl 0.04284f
-C9 a_6113_n2395# a_6052_n1958# 0.03243f
-C10 Vout a_6052_n1958# 0.02056f
-C11 a_6113_n2395# a_7397_n2523# 0.46077f
-C12 Vout a_7397_n2523# 0.11621f
-C13 a_4710_n1958# vctl 0.05026f
-C14 VPWR a_2225_n217# 0.01623f
-C15 a_3434_351# a_2092_351# 0.88103f
-C16 Vout a_6024_351# 0.4131f
-C17 a_745_n2395# a_542_269# 0.40206f
+C0 vctl a_4909_n217# 0.08436f
+C1 a_2092_351# a_1998_351# 0.42202f
+C2 a_620_930# a_6051_n2525# 0.19288f
+C3 a_683_n2525# a_745_n2395# 0.10818f
+C4 a_620_930# a_7397_n2523# 0.19389f
+C5 VPWR a_3567_n217# 0.0108f
+C6 a_2087_n2395# a_2026_n1958# 0.03943f
+C7 a_2025_n2525# a_620_930# 0.18981f
+C8 Vout a_6052_n1958# 0.02056f
+C9 a_883_n217# a_542_269# 0.03491f
+C10 VPWR Vout 0.98762f
+C11 a_3429_n2395# vctl 0.04109f
+C12 vctl m6_8408_n599# 0.01477f
+C13 a_2087_n2395# a_2025_n2525# 0.12991f
+C14 a_3429_n2395# a_620_930# 0.04637f
+C15 a_7398_n1956# vctl 0.05123f
+C16 vctl a_4771_n2395# 0.03129f
+C17 a_3429_n2395# a_2087_n2395# 0.72984f
 C18 VPWR a_1998_351# 1.37065f
-C19 a_2087_n2395# a_2025_n2525# 0.12991f
-C20 a_620_930# a_3429_n2395# 0.04637f
-C21 a_883_n217# a_620_930# 0.02036f
-C22 VPWR a_4682_351# 1.35049f
-C23 a_620_930# a_3340_351# 0.19603f
-C24 a_7398_n1956# a_620_930# 0.01439f
-C25 a_745_n2395# a_2025_n2525# 0.42019f
-C26 a_6113_n2395# vctl 0.02267f
-C27 Vout vctl 0.21825f
-C28 a_4776_351# a_620_930# 0.04298f
-C29 VPWR a_7397_n2523# 1.38295f
-C30 a_6113_n2395# Vout 0.81343f
-C31 VPWR a_4709_n2525# 1.36202f
-C32 a_4776_351# a_4909_n217# 0.22378f
-C33 a_4776_351# m6_8408_n599# 0.08511f
-C34 a_6052_n1958# a_4771_n2395# 0.22936f
-C35 a_3434_351# a_620_930# 0.04103f
-C36 VPWR a_6024_351# 1.36969f
-C37 a_4709_n2525# a_4771_n2395# 0.11922f
-C38 a_883_n217# a_750_351# 0.22378f
-C39 a_3434_351# a_4909_n217# 0.03153f
-C40 VPWR vctl 0.2823f
-C41 a_4710_n1958# a_4771_n2395# 0.03159f
-C42 VPWR Vout 0.98762f
-C43 VPWR a_6113_n2395# 1.36426f
-C44 a_2092_351# a_2225_n217# 0.22378f
-C45 a_745_n2395# a_684_n1958# 0.04971f
-C46 vctl a_4771_n2395# 0.03129f
-C47 a_542_269# a_620_930# 0.93638f
-C48 a_2092_351# a_1998_351# 0.42202f
-C49 a_620_930# a_2025_n2525# 0.18981f
-C50 a_6113_n2395# a_4771_n2395# 0.58365f
-C51 a_6251_n217# vctl 0.08336f
-C52 a_2087_n2395# vctl 0.04184f
-C53 Vout a_6251_n217# 0.2448f
-C54 a_683_n2525# a_542_269# 0.45412f
-C55 a_745_n2395# vctl 0.04038f
-C56 a_3367_n2525# a_3429_n2395# 0.12854f
-C57 a_3567_n217# a_3434_351# 0.22378f
-C58 a_542_269# a_750_351# 0.3548f
-C59 VPWR a_4771_n2395# 0.98193f
-C60 a_2092_351# vctl 0.0248f
-C61 a_620_930# a_1998_351# 0.19723f
-C62 a_542_269# a_656_351# 0.08875f
-C63 a_4682_351# a_620_930# 0.19696f
-C64 a_3368_n1958# vctl 0.05041f
-C65 a_620_930# a_7397_n2523# 0.19389f
-C66 a_620_930# a_684_n1958# 0.06371f
-C67 a_4709_n2525# a_620_930# 0.18962f
-C68 VPWR a_2087_n2395# 1.15543f
-C69 a_750_351# a_2225_n217# 0.03153f
-C70 VPWR a_745_n2395# 0.81739f
-C71 a_6024_351# a_620_930# 0.10045f
-C72 a_750_351# a_1998_351# 0.09188f
-C73 a_620_930# vctl 0.09057f
-C74 VPWR a_2092_351# 1.29553f
-C75 a_4909_n217# vctl 0.08436f
-C76 VPWR a_3368_n1958# 0.01475f
-C77 a_3434_351# a_3340_351# 0.42148f
-C78 vctl m6_8408_n599# 0.01477f
-C79 a_6113_n2395# a_620_930# 0.06975f
-C80 Vout a_620_930# 0.16863f
-C81 a_4776_351# a_3434_351# 0.91818f
-C82 Vout m6_8408_n599# 0.01121f
-C83 a_745_n2395# a_2087_n2395# 0.35714f
-C84 a_750_351# vctl 0.02282f
-C85 a_883_n217# a_542_269# 0.03491f
-C86 VPWR a_620_930# 13.1862f
-C87 a_3368_n1958# a_2087_n2395# 0.23444f
-C88 VPWR m6_8408_n599# 0.01344f
-C89 a_3567_n217# vctl 0.0811f
-C90 a_620_930# a_4771_n2395# 0.04406f
-C91 VPWR a_683_n2525# 1.35573f
-C92 a_2026_n1958# vctl 0.04894f
-C93 VPWR a_750_351# 1.05125f
-C94 a_6113_n2395# a_6051_n2525# 0.10827f
-C95 a_2087_n2395# a_620_930# 0.05403f
-C96 a_745_n2395# a_620_930# 0.08011f
-C97 VPWR a_656_351# 1.37421f
-C98 a_4776_351# a_4682_351# 0.42665f
-C99 a_4709_n2525# a_3429_n2395# 0.45955f
-C100 VPWR a_3567_n217# 0.0108f
-C101 a_4710_n1958# a_3429_n2395# 0.23035f
-C102 a_2092_351# a_620_930# 0.04f
-C103 a_683_n2525# a_2087_n2395# 0.01232f
-C104 a_3434_351# a_4682_351# 0.09926f
-C105 a_745_n2395# a_683_n2525# 0.10818f
-C106 VPWR a_2026_n1958# 0.01457f
-C107 VPWR a_6051_n2525# 1.38336f
-C108 a_4776_351# a_6024_351# 0.1057f
-C109 vctl a_3429_n2395# 0.04109f
-C110 a_883_n217# vctl 0.08086f
-C111 a_7398_n1956# vctl 0.05123f
-C112 VPWR a_3367_n2525# 1.37334f
-C113 a_6113_n2395# a_7398_n1956# 0.21632f
-C114 Vout a_7398_n1956# 0.13041f
-C115 a_4776_351# vctl 0.026f
-C116 a_6051_n2525# a_4771_n2395# 0.46167f
-C117 Vout a_4776_351# 0.20831f
-C118 a_2092_351# a_750_351# 0.77984f
-C119 a_3434_351# vctl 0.02497f
-C120 a_542_269# a_684_n1958# 0.23665f
-C121 a_2087_n2395# a_2026_n1958# 0.03943f
-C122 a_745_n2395# a_2026_n1958# 0.23834f
-C123 a_3567_n217# a_2092_351# 0.03153f
-C124 VPWR a_3429_n2395# 1.08631f
-C125 VPWR a_3340_351# 1.36686f
-C126 a_2087_n2395# a_3367_n2525# 0.45379f
-C127 a_683_n2525# a_620_930# 0.23019f
-C128 VPWR a_4776_351# 1.09569f
-C129 a_4771_n2395# a_3429_n2395# 0.7336f
-C130 a_750_351# a_620_930# 0.08218f
-C131 VPWR a_3434_351# 1.00449f
-C132 a_620_930# a_656_351# 0.24146f
-C133 a_2087_n2395# a_3429_n2395# 0.72984f
-C134 a_4776_351# a_6251_n217# 0.03205f
-C135 vctl a_2225_n217# 0.07714f
+C19 a_7398_n1956# a_620_930# 0.01439f
+C20 VPWR a_542_269# 0.7984f
+C21 a_4771_n2395# a_620_930# 0.04406f
+C22 a_3434_351# a_4682_351# 0.09926f
+C23 Vout a_6113_n2395# 0.81343f
+C24 a_6052_n1958# a_6113_n2395# 0.03243f
+C25 a_3434_351# a_4909_n217# 0.03153f
+C26 VPWR a_6113_n2395# 1.36426f
+C27 vctl a_4710_n1958# 0.05026f
+C28 Vout a_6024_351# 0.4131f
+C29 VPWR a_6024_351# 1.36969f
+C30 VPWR a_4682_351# 1.35049f
+C31 a_3429_n2395# a_3367_n2525# 0.12854f
+C32 a_3429_n2395# a_4709_n2525# 0.45955f
+C33 VPWR a_2026_n1958# 0.01457f
+C34 VPWR a_6051_n2525# 1.38336f
+C35 vctl a_745_n2395# 0.04038f
+C36 Vout a_7397_n2523# 0.11621f
+C37 VPWR a_7397_n2523# 1.38295f
+C38 a_3368_n1958# vctl 0.05041f
+C39 a_2225_n217# a_750_351# 0.03153f
+C40 VPWR a_2025_n2525# 1.36925f
+C41 a_745_n2395# a_620_930# 0.08011f
+C42 a_656_351# a_750_351# 0.42803f
+C43 a_4771_n2395# a_4709_n2525# 0.11922f
+C44 a_745_n2395# a_684_n1958# 0.04971f
+C45 a_2087_n2395# a_745_n2395# 0.35714f
+C46 vctl a_750_351# 0.02282f
+C47 a_683_n2525# a_620_930# 0.23019f
+C48 a_3429_n2395# VPWR 1.08631f
+C49 a_3368_n1958# a_2087_n2395# 0.23444f
+C50 m6_8408_n599# Vout 0.01121f
+C51 VPWR m6_8408_n599# 0.01344f
+C52 a_750_351# a_620_930# 0.08218f
+C53 a_2087_n2395# a_683_n2525# 0.01232f
+C54 a_6251_n217# a_4776_351# 0.03205f
+C55 a_7398_n1956# Vout 0.13041f
+C56 a_4771_n2395# a_6052_n1958# 0.22936f
+C57 a_4771_n2395# VPWR 0.98193f
+C58 a_6113_n2395# a_6051_n2525# 0.10827f
+C59 a_7397_n2523# a_6113_n2395# 0.46077f
+C60 vctl a_4776_351# 0.026f
+C61 a_4776_351# a_620_930# 0.04298f
+C62 a_750_351# a_2092_351# 0.77984f
+C63 a_6251_n217# vctl 0.08336f
+C64 a_883_n217# a_750_351# 0.22378f
+C65 vctl a_2225_n217# 0.07714f
+C66 a_7398_n1956# a_6113_n2395# 0.21632f
+C67 a_4771_n2395# a_6113_n2395# 0.58365f
+C68 VPWR a_745_n2395# 0.81739f
+C69 a_3368_n1958# VPWR 0.01475f
+C70 a_656_351# a_620_930# 0.24146f
+C71 VPWR a_683_n2525# 1.35573f
+C72 vctl a_620_930# 0.09057f
+C73 a_4771_n2395# a_6051_n2525# 0.46167f
+C74 VPWR a_750_351# 1.05125f
+C75 vctl a_684_n1958# 0.04284f
+C76 a_745_n2395# a_542_269# 0.40206f
+C77 vctl a_2087_n2395# 0.04184f
+C78 a_4776_351# a_3434_351# 0.91818f
+C79 a_684_n1958# a_620_930# 0.06371f
+C80 a_2087_n2395# a_620_930# 0.05403f
+C81 a_683_n2525# a_542_269# 0.45412f
+C82 a_2225_n217# a_2092_351# 0.22378f
+C83 a_3429_n2395# a_4771_n2395# 0.7336f
+C84 a_750_351# a_1998_351# 0.09188f
+C85 a_750_351# a_542_269# 0.3548f
+C86 Vout a_4776_351# 0.20831f
+C87 VPWR a_4776_351# 1.09569f
+C88 vctl a_2092_351# 0.0248f
+C89 a_3340_351# a_620_930# 0.19603f
+C90 a_2026_n1958# a_745_n2395# 0.23834f
+C91 a_2092_351# a_620_930# 0.04f
+C92 vctl a_883_n217# 0.08086f
+C93 a_3429_n2395# a_4710_n1958# 0.23035f
+C94 a_620_930# a_3367_n2525# 0.19098f
+C95 a_883_n217# a_620_930# 0.02036f
+C96 vctl a_3434_351# 0.02497f
+C97 a_620_930# a_4709_n2525# 0.18962f
+C98 a_6251_n217# Vout 0.2448f
+C99 a_2025_n2525# a_745_n2395# 0.42019f
+C100 a_3434_351# a_620_930# 0.04103f
+C101 VPWR a_2225_n217# 0.01623f
+C102 VPWR a_656_351# 1.37421f
+C103 a_2087_n2395# a_3367_n2525# 0.45379f
+C104 vctl a_3567_n217# 0.0811f
+C105 a_4771_n2395# a_4710_n1958# 0.03159f
+C106 a_3429_n2395# a_3368_n1958# 0.03778f
+C107 vctl Vout 0.21825f
+C108 vctl a_6052_n1958# 0.04998f
+C109 vctl VPWR 0.2823f
+C110 a_2092_351# a_3340_351# 0.10275f
+C111 Vout a_620_930# 0.16863f
+C112 VPWR a_620_930# 13.1862f
+C113 a_4776_351# a_6024_351# 0.1057f
+C114 a_4776_351# a_4682_351# 0.42665f
+C115 a_656_351# a_542_269# 0.08875f
+C116 VPWR a_2087_n2395# 1.15543f
+C117 a_3434_351# a_3340_351# 0.42148f
+C118 a_4776_351# a_4909_n217# 0.22378f
+C119 a_3434_351# a_2092_351# 0.88103f
+C120 a_620_930# a_1998_351# 0.19723f
+C121 a_542_269# a_620_930# 0.93638f
+C122 a_3567_n217# a_2092_351# 0.03153f
+C123 vctl a_6113_n2395# 0.02267f
+C124 VPWR a_3340_351# 1.36686f
+C125 a_684_n1958# a_542_269# 0.23665f
+C126 VPWR a_2092_351# 1.29553f
+C127 a_620_930# a_6113_n2395# 0.06975f
+C128 m6_8408_n599# a_4776_351# 0.08511f
+C129 VPWR a_3367_n2525# 1.37334f
+C130 a_3567_n217# a_3434_351# 0.22378f
+C131 VPWR a_4709_n2525# 1.36202f
+C132 a_6024_351# a_620_930# 0.10045f
+C133 vctl a_2026_n1958# 0.04894f
+C134 a_4682_351# a_620_930# 0.19696f
+C135 VPWR a_3434_351# 1.00449f
 R0 Vout.n4 Vout.n0 30.5219
 R1 Vout.n3 Vout.n1 15.6071
 R2 Vout.n3 Vout.n2 15.0005
