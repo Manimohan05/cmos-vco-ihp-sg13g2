@@ -120,6 +120,7 @@ Frequency vs. control voltage characteristic:
 <a name="pex"></a>
 ## 7. Post-Layout Verification
 Parasitic-extracted (PEX) simulations confirm consistent oscillation. Frequency shifts due to parasitics are within acceptable margins, preserving tuning characteristics.
+<center><img src="images/VCO_PEX_OUT_1V.png" width="800"></center>  
 
 [Return to top](#toc)
 
