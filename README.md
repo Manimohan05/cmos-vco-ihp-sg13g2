@@ -98,19 +98,20 @@ Frequency vs. control voltage characteristic:
 
 <a name="layout"></a>
 ## 5. Layout Design
+### 5.1 VCO Layout
 - Total VCO layout area: **2246.58 µm²**  
-- Total Chip area: **2246.58 µm²**  
 - Designed in IHP SG13G2 process with all active + metal layers.  
 <center><img src="images/LAYOUT_11STG_VCO.png" width="800"></center>  
 
 
 <a name="layout_VCO_with_Bondpads"></a>
-### 6.6 Final VCO Layout (without Fillers) 
+### 5.2 Final VCO Layout (without Fillers) 
 <center><img src="Combined_Design/images/LAYOUT_11STG_VCO__not_filled.png" width="1000"></center>  
 
 <a name="Final_layout_VCO"></a>
-### 6.7 Final VCO Layout (with Fillers)  
-- Area: 90000.00 µm²
+### 5.3 Final VCO Layout (with Fillers) 
+- Total Chip area: **90000.00 µm²**  
+- Designed in IHP SG13G2 process with all active + metal layers.  
 <center><img src="Combined_Design/images/LAYOUT_11STG_VCO_filled.png" width="1000"></center>  
 
 
@@ -121,16 +122,33 @@ Frequency vs. control voltage characteristic:
 <a name="layout_info"></a>
 ## 6. Layout Information
 
-| **Width (µm)** | **Height (µm)** | **Area (µm²)** | **Layers Used** |
-|----------------|-----------------|----------------|-----------------|
-| 40            | 22.5            | 2246.58        | Active + metals |
+|               | **Width (µm)** | **Height (µm)** | **Pitch (µm)** | **Area (µm²)** |   Layers   |
+|---------------|----------------|-----------------|----------------|----------------|------------|
+| **Layout**    | 300            | 300             | N/A              | 90,000        |    all     |
+| **Pads**      | 40             | 40              | 75             | 3,600          |  TM2 -  M3 |
+| **RF Pads**   | 40             | 40              | 75             | ~2,984         |  TM2 - TM1 |
+
+[Return to top](#toc)
+
+---
+
+---
+
+<a name="pv"></a>
+## 7. Physical Verification (DRC, LVS)
+
+### Design Rule Check (DRC) Results
+<center><img src="Combined_Design/images/DRC.png" width="1000"></center>
+
+### Layout vs. Schematics (LVS) Results 
+<center><img src="Combined_Design/images/LVS.png" width="1000"></center>
 
 [Return to top](#toc)
 
 ---
 
 <a name="pex"></a>
-## 7. Post-Layout Verification
+## 8. Post-layout Verification after PEX
 Parasitic-extracted (PEX) simulations confirm consistent oscillation. Frequency shifts due to parasitics are within acceptable margins, preserving tuning characteristics.
 <center><img src="images/VCO_PEX_OUT_1V.png" width="800"></center>  
 
@@ -139,7 +157,7 @@ Parasitic-extracted (PEX) simulations confirm consistent oscillation. Frequency 
 ---
 
 <a name="ref"></a>
-## 8. References
+## 9. References
 - tt08-tiny-pll - [https://github.com/LegumeEmittingDiode/tt08-tiny-pll](https://github.com/LegumeEmittingDiode/tt08-tiny-pll)  
 - avsdpll_1v8 - [https://github.com/lakshmi-sathi/avsdpll_1v8](https://github.com/lakshmi-sathi/avsdpll_1v8)  
 
