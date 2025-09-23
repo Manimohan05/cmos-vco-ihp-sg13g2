@@ -106,13 +106,13 @@ Frequency vs. control voltage characteristic:
 
 <a name="layout_VCO_with_Bondpads"></a>
 ### 5.2 Final VCO Layout (without Fillers) 
-<center><img src="Combined_Design/images/LAYOUT_11STG_VCO__not_filled.png" width="1000"></center>  
+<center><img src="images/LAYOUT_11STG_VCO__not_filled.png" width="1000"></center>  
 
 <a name="Final_layout_VCO"></a>
 ### 5.3 Final VCO Layout (with Fillers) 
 - Total Chip area: **90000.00 µm²**  
 - Designed in IHP SG13G2 process with all active + metal layers.  
-<center><img src="Combined_Design/images/LAYOUT_11STG_VCO_filled.png" width="1000"></center>  
+<center><img src="images/LAYOUT_11STG_VCO_filled.png" width="1000"></center>  
 
 
 [Return to top](#toc)
@@ -138,10 +138,10 @@ Frequency vs. control voltage characteristic:
 ## 7. Physical Verification (DRC, LVS)
 
 ### Design Rule Check (DRC) Results
-<center><img src="Combined_Design/images/DRC.png" width="1000"></center>
+<center><img src="images/DRC.png" width="1000"></center>
 
 ### Layout vs. Schematics (LVS) Results 
-<center><img src="Combined_Design/images/LVS.png" width="1000"></center>
+<center><img src="images/LVS.png" width="1000"></center>
 
 [Return to top](#toc)
 
