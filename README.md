@@ -98,9 +98,21 @@ Frequency vs. control voltage characteristic:
 
 <a name="layout"></a>
 ## 5. Layout Design
-- Total layout area: **2246.58 µm²**  
+- Total VCO layout area: **2246.58 µm²**  
+- Total Chip area: **2246.58 µm²**  
 - Designed in IHP SG13G2 process with all active + metal layers.  
 <center><img src="images/LAYOUT_11STG_VCO.png" width="800"></center>  
+
+
+<a name="layout_VCO_with_Bondpads"></a>
+### 6.6 Final VCO Layout (without Fillers) 
+<center><img src="Combined_Design/images/LAYOUT_11STG_VCO__not_filled.png" width="1000"></center>  
+
+<a name="Final_layout_VCO"></a>
+### 6.7 Final VCO Layout (with Fillers)  
+- Area: 90000.00 µm²
+<center><img src="Combined_Design/images/LAYOUT_11STG_VCO_filled.png" width="1000"></center>  
+
 
 [Return to top](#toc)
 
@@ -111,7 +123,7 @@ Frequency vs. control voltage characteristic:
 
 | **Width (µm)** | **Height (µm)** | **Area (µm²)** | **Layers Used** |
 |----------------|-----------------|----------------|-----------------|
-| 100            | 22.5            | 2246.58        | Active + metals |
+| 40            | 22.5            | 2246.58        | Active + metals |
 
 [Return to top](#toc)
 
