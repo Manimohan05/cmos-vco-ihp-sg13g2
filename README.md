@@ -1,4 +1,8 @@
-# Voltage-Controlled Oscillator (VCO) in IHP SG13G2 Process
+# 11-Stage Current-Starved Ring Oscillator VCO in IHP SG13G2 130 nm
+
+**Part of the tapeout:** *PFD-CP Type-II ΔΣ Fractional-N PLL Clock Multiplier* — IHP OpenMPW, July 2025 ([tapeout repository](https://github.com/avishkaherath/TO_July2025))
+
+**Tools:** Xschem · Ngspice · KLayout &nbsp;|&nbsp; **Flow:** transistor-level design → layout → DRC/LVS → PEX → post-layout simulation
 
 <a name="toc"></a>
 # Table of Contents
@@ -15,20 +19,21 @@
     - [Frequency Tuning Curve](#sim_tune)  
 5. [Layout Design](#layout)  
 6. [Layout Information](#layout_info)  
-7. [Post-Layout Verification](#pex)  
-8. [References](#ref)  
+7. [Physical Verification (DRC, LVS)](#pv)  
+8. [Post-Layout Verification](#pex)  
+9. [References](#ref)  
 
 ---
 
 <a name="overview"></a>
 ## 1. Overview
-This repository contains the design and layout of a **current-starved, 11-stage ring oscillator VCO** implemented in the **IHP SG13G2 130 nm CMOS process**.  
+This repository contains the design and layout of a **current-starved, 11-stage ring oscillator VCO** implemented in the **IHP SG13G2 130 nm process**. It was designed as the VCO block of a PFD-CP Type-II ΔΣ fractional-N PLL clock multiplier taped out through the IHP OpenMPW shuttle (July 2025).  
 
 The VCO generates a tunable oscillation frequency controlled by an external voltage input.  
 Key goals of the design are:  
 - Wide frequency tuning range  
 - Robust operation across process-voltage-temperature (PVT) corners  
-- Low power consumption  
+- Low power consumption, with **zero standby power** when disabled  
 - Compact layout area  
 
 [Return to top](#toc)
@@ -100,18 +105,18 @@ Frequency vs. control voltage characteristic:
 ## 5. Layout Design
 ### 5.1 VCO Layout
 - Total VCO layout area: **2246.58 µm²**  
-- Designed in IHP SG13G2 process with all active + metal layers.  
+- Designed in the IHP SG13G2 process using all active and metal layers.  
 <center><img src="images/LAYOUT_11STG_VCO.png" width="800"></center>  
 
 
 <a name="layout_VCO_with_Bondpads"></a>
-### 5.2 Final VCO Layout (without Fillers) 
+### 5.2 Final VCO Layout (without Fillers)
 <center><img src="images/LAYOUT_11STG_VCO__not_filled.png" width="1000"></center>  
 
 <a name="Final_layout_VCO"></a>
-### 5.3 Final VCO Layout (with Fillers) 
-- Total Chip area: **90000.00 µm²**  
-- Designed in IHP SG13G2 process with all active + metal layers.  
+### 5.3 Final VCO Layout (with Fillers)
+- Total chip area: **90,000 µm²** (300 µm × 300 µm)  
+- Designed in the IHP SG13G2 process using all active and metal layers.  
 <center><img src="images/LAYOUT_11STG_VCO_filled.png" width="1000"></center>  
 
 
@@ -132,8 +137,6 @@ Frequency vs. control voltage characteristic:
 
 ---
 
----
-
 <a name="pv"></a>
 ## 7. Physical Verification (DRC, LVS)
 
@@ -148,7 +151,7 @@ Frequency vs. control voltage characteristic:
 ---
 
 <a name="pex"></a>
-## 8. Post-layout Verification after PEX
+## 8. Post-Layout Verification after PEX
 Parasitic-extracted (PEX) simulations confirm consistent oscillation. Frequency shifts due to parasitics are within acceptable margins, preserving tuning characteristics.
 <center><img src="images/VCO_PEX_OUT_1V.png" width="800"></center>  
 
