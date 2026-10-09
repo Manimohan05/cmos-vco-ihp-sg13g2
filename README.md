@@ -68,7 +68,7 @@ Each stage of the oscillator is implemented using a CMOS inverter. Delay is cont
 <a name="ring"></a>
 ### 3.2 11-Stage Ring Oscillator
 An 11-stage ring of inverters provides stable oscillation in the MHz range.  
-<center><img src="images/CIRCUIT_11STG_VCO.png" width="800"></center>  
+<center><img src="design_data/xschem/images/11Stages_VCO_sch.png" width="800"></center>  
 
 <a name="ctrl"></a>
 ### 3.3 Control Mechanism
